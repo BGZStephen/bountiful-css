@@ -1,0 +1,191 @@
+// buttons
+
+.button {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 4px solid;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: 0.2s ease all;
+  &.button:hover {
+    border: none;
+    border-bottom: 2px solid;
+    padding-top: 9px;
+    margin: 5px 5px 7px 5px;
+  }
+}
+
+.button-small {
+  border-radius: 5px;
+  font-size: 0.8em;
+  margin: 2px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  &.button-small:hover {
+    border: none;
+    border-bottom: 2px solid;
+    padding-top: 5px;
+    margin: 3px 2px 3px 2px;
+  }
+}
+
+.button-large {
+  border-radius: 5px;
+  font-size: 1.2em;
+  margin: 5px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  &.button-large:hover {
+    border: none;
+    border-bottom: 2px solid;
+    padding-top: 15px;
+    margin: 5px 5px 7px 5px;
+  }
+}
+
+.button-primary {
+  background: $primary-400;
+  border-bottom-color: $primary-800;
+  color: $font-white;
+  &.button-primary:hover {
+    border-bottom: 2px solid $primary-800;
+  }
+}
+
+.button-success {
+  background: $success-400;
+  border-bottom-color: $success-800;
+  color: $font-white;
+  &.button-success:hover {
+    border-bottom: 2px solid $success-800;
+  }
+}
+
+.button-danger {
+  background: $danger-400;
+  border-bottom-color: $danger-800;
+  color: $font-white;
+  &.button-danger:hover {
+    border-bottom: 2px solid $danger-800;
+  }
+}
+
+.button-warning {
+  background: $warning-400;
+  border-bottom-color: $warning-800;
+  color: $font-white;
+  &.button-warning:hover {
+    border-bottom: 2px solid $warning-800;
+  }
+}
+
+.button-info {
+  background: $info-400;
+  border-bottom-color: $info-800;
+  color: $font-white;
+  &.button-info:hover {
+    border-bottom: 2px solid $info-800;
+  }
+}
+
+.button-pink {
+  background: $pink-400;
+  border-bottom-color: $pink-800;
+  color: $font-white;
+  &.button-pink:hover {
+    border-bottom: 2px solid $pink-800;
+  }
+}
+
+.button-violet {
+  background: $violet-400;
+  border-bottom-color: $violet-800;
+  color: $font-white;
+  &.button-violet:hover {
+    border-bottom: 2px solid $violet-800;
+  }
+}
+
+.button-purple {
+  background: $purple-400;
+  border-bottom-color: $purple-800;
+  color: $font-white;
+  &.button-purple:hover {
+    border-bottom: 2px solid $purple-800;
+  }
+}
+
+.button-indigo {
+  background: $indigo-400;
+  border-bottom-color: $indigo-800;
+  color: $font-white;
+  &.button-indigo:hover {
+    border-bottom: 2px solid $indigo-800;
+  }
+}
+
+.button-blue {
+  background: $blue-400;
+  border-bottom-color: $blue-800;
+  color: $font-white;
+  &.button-blue:hover {
+    border-bottom: 2px solid $blue-800;
+  }
+}
+
+.button-teal {
+  background: $teal-400;
+  border-bottom-color: $teal-800;
+  color: $font-white;
+  &.button-teal:hover {
+    border-bottom: 2px solid $teal-800;
+  }
+}
+
+.button-green {
+  background: $green-400;
+  border-bottom-color: $green-800;
+  color: $font-white;
+  &.button-green:hover {
+    border-bottom: 2px solid $green-800;
+  }
+}
+
+.button-orange {
+  background: $orange-400;
+  border-bottom-color: $orange-800;
+  color: $font-white;
+  &.button-orange:hover {
+    border-bottom: 2px solid $orange-800;
+  }
+}
+
+.button-brown {
+  background: $brown-400;
+  border-bottom-color: $brown-800;
+  color: $font-white;
+  &.button-brown:hover {
+    border-bottom: 2px solid $brown-800;
+  }
+}
+
+.button-grey {
+  background: $grey-400;
+  border-bottom-color: $grey-800;
+  color: $font-white;
+  &.button-grey:hover {
+    border-bottom: 2px solid $grey-800;
+  }
+}
+
+.button-slate {
+  background: $slate-400;
+  border-bottom-color: $slate-800;
+  color: $font-white;
+  &.button-slate:hover {
+    border-bottom: 2px solid $slate-800;
+  }
+}
