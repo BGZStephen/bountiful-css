@@ -4,4 +4,4 @@ const APP_ROUTES: Routes = [
   {path: '', loadChildren: './modules/website/website.module#WebsiteModule'}
 ]
 
-export const AppRoutes = RouterModule.forChild(APP_ROUTES)
+export const AppRoutes = RouterModule.forRoot(APP_ROUTES)
