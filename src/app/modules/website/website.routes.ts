@@ -4,6 +4,7 @@ import { WebsiteViewComponent, WebsiteHomeComponent } from './components/website
 const WEBSITE_ROUTES: Routes = [
   {path: '', component: WebsiteViewComponent, children: [
     {path: '', component: WebsiteHomeComponent},
+    {path: 'library', loadChildren: './modules/library/library.module#LibraryModule'}
   ]},
 ]
 
