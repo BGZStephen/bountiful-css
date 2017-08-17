@@ -1,0 +1,65 @@
+.panel {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25), 0 2px 2px rgba(0,0,0,0.22);
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+@for $i from 1 through 12 {
+  $margin: 6px;
+  .panel-#{$i} {
+    @extend .panel;
+    width: calc(100% / 12 * #{$i} - #{$margin} * 2);
+    margin: $margin;
+  }
+}
+
+.panel-head {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top: 2px;
+  border-right: 2px;
+  border-left: 2px;
+  padding: 8px;
+}
+
+$colors: (
+    ("success", $success-400, $success-800),
+    ("primary", $primary-400, $primary-800),
+    ("danger", $danger-400, $danger-800),
+    ("warning", $warning-400, $warning-800),
+    ("info", $info-400, $info-800),
+    ("pink", $pink-400, $pink-800),
+    ("violet", $violet-400, $violet-800),
+    ("purple", $purple-400, $purple-800),
+    ("indigo", $indigo-400, $indigo-800),
+    ("blue", $blue-400, $blue-800),
+    ("teal", $teal-400, $teal-800),
+    ("green", $green-400, $green-800),
+    ("orange", $orange-400, $orange-800),
+    ("brown", $brown-400, $brown-800),
+    ("grey", $grey-400, $grey-800),
+    ("slate", $slate-400, $slate-800)
+);
+
+@each $color-name, $bgcolor, $color in $colors {
+  .panel-head--#{$color-name} {
+    @extend .panel-head;
+    background: $bgcolor;
+    border-top: 2px solid $color !important;
+    border-left: 2px solid $color !important;
+    border-right: 2px solid $color !important;
+    border-bottom: 1px solid $color !important;
+  }
+}
+
+.panel-body {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-width: 1px;
+  border-right: 1px solid #999;
+  border-left: 1px solid #999;
+  border-bottom: 1px solid #999;
+  padding: 5px;
+}
