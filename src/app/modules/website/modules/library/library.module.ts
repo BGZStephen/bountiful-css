@@ -5,13 +5,14 @@ import { NgModule } from '@angular/core';
 import { LibraryRoutes } from './library.routes';
 
 // components
-import { LibraryViewComponent, LibraryHomeComponent, LibraryGridComponent } from './components/library-components-barrel';
+import { LibraryViewComponent, LibraryHomeComponent, LibraryGridComponent, LibraryButtonsComponent} from './components/library-components-barrel';
 
 @NgModule({
   declarations: [
     LibraryViewComponent,
     LibraryHomeComponent,
-    LibraryGridComponent
+    LibraryGridComponent,
+    LibraryButtonsComponent
   ],
   imports: [
     CommonModule,
